@@ -95,7 +95,7 @@ public class BankAccount {
             deposit(amount);
         } else {
             System.out.println("Invalid input! Please enter a number.");
-            scanner.next(); // Clear invalid input
+            scanner.next();
         }
         System.out.println();
     }
@@ -124,11 +124,11 @@ public class BankAccount {
         System.out.print("\nEnter withdrawal amount: $");
         if (scanner.hasNextDouble()) {
             double amount = scanner.nextDouble();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine();
             withdraw(amount);
         } else {
             System.out.println("Invalid input! Please enter a number.");
-            scanner.nextLine(); // Clear invalid input
+            scanner.nextLine();
         }
         System.out.println();
     }
